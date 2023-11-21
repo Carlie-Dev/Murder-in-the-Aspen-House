@@ -17,7 +17,7 @@ public class Playagain{
           System.exit(0);
         default:
           System.out.println("Please enter Y or N.");
-          playAgainInput = playAgainScanner.nextLine().toUpperCase();      
+          playAgainInput = playAgainScanner.nextLine().toUpperCase();
       }
     }
     playAgainScanner.close();
