@@ -10,7 +10,7 @@ class Main {
 
       //scanners
       Scanner genderScanner = new Scanner(System.in);
-
+      
       //chosing gender
       System.out.println("Time to introduce yourself.");
       System.out.println("Type 1 for Male or 2 for Female.");
