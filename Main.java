@@ -1,5 +1,11 @@
 import java.util.Scanner;
+import java.util.*;
 class Main {
+  //Suspects
+  Character Nyxie = new Character("Nyxie", "he", "him", 0);
+  Character Aspen = new Character("General Aspen", "he","him", 0);
+  Character Tina = new Character ("Tina", "she", "her", 0);
+  
   public static void main(String[] args) {
     while(true){
       //Player menu variables
@@ -44,7 +50,7 @@ class Main {
       name = nameScanner.nextLine();
 
 
-      Character player = new Character(name, pronoun, pronoun2);
+      Character player = new Character(name, pronoun, pronoun2, 0);
 
       System.out.println(" ");
       System.out.println("--You--");
@@ -77,6 +83,7 @@ class Main {
                 e.printStackTrace();
             }
             ClearScreen.clearScreen();
+            Chapter1.chapter1();
             break;
           case "N":
             //calls refusal of the call ending if player does not wish to solve the case
@@ -95,12 +102,12 @@ class Main {
             System.out.println("You must chose Y/N");
             continueInput = continueScanner.nextLine().toUpperCase();
         }
-        //close scanner
-
-        continueScanner.close();
-        nameScanner.close();
-        genderScanner.close();
+        
       }
+      //close scanner
+      continueScanner.close();
+      nameScanner.close();
+      genderScanner.close();
     }
   }
 }
