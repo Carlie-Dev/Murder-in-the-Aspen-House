@@ -18,6 +18,7 @@ public class RefusalOfCall{
     }catch(InterruptedException e){
       e.printStackTrace();
     }
+    
     ClearScreen.clearScreen();
 
     System.out.println("You wake up in a dark room. \n You hear a voice.");

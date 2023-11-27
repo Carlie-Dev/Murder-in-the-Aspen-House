@@ -2,9 +2,9 @@ import java.util.Scanner;
 import java.util.*;
 class Main {
   //Suspects
-  Character Nyxie = new Character("Nyxie", "he", "him", 0);
-  Character Aspen = new Character("General Aspen", "he","him", 0);
-  Character Tina = new Character ("Tina", "she", "her", 0);
+  public Character Nyxie = new Character("Nyxie", "he", "him", 0);
+  public Character Aspen = new Character("General Aspen", "he","him", 0);
+  public Character Tina = new Character ("Tina", "she", "her", 0);
   
   public static void main(String[] args) {
     while(true){
@@ -104,10 +104,10 @@ class Main {
         }
         
       }
-      //close scanner
-      continueScanner.close();
-      nameScanner.close();
-      genderScanner.close();
     }
+    //close scanner
+    //continueScanner.close();
+    //nameScanner.close();
+    //genderScanner.close();
   }
 }
