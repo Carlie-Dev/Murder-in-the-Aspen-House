@@ -62,7 +62,7 @@ class Chapter1 {
       
       //respect point gained or lost.
       while(true){
-        Scanner rosePath = new Scanner();
+        Scanner rosePath = new Scanner(System.in);
         System.out.println("1. Laugh at her /n2. Help Her");
         int rosePathChoice = rosePath.nextInt();
         switch(rosePathChoice){
@@ -71,7 +71,7 @@ class Chapter1 {
             System.out.println("You decided to laugh at her.");
             System.out.println("-1 respect point with Tina.");
             System.out.println("Respect points measure how much a suspect respects you. The higher their respect for you, the more open they will be in interviews.");
-            Tina.respect = Tina.respect - 1;
+            Tina.subRespect();
 
             System.out.println("----");
             System.out.println("Tina frowned before taking off her headscarf and wrapping her wound herself.");
@@ -81,7 +81,7 @@ class Chapter1 {
             System.out.println("You decided to help her. You took her headscarf and wrapped it tightly around the wound on her finger.");
             System.out.println("+1 respect point with Tina.");
             System.out.println("Respect points measure how much a suspect respects you. The higher their respect for you, the more open they will be in interviews.");
-            Tina.respect = Tina.respect + 1;
+            Tina.addRespect();
             break;
           default:
             System.out.println("Please chose option 1 or 2.");
@@ -92,6 +92,9 @@ class Chapter1 {
     //Introduces General Aspen when player takes the main staircase.
   public static void staircasePath(){
     ClearScreen.clearScreen();
+    System.out.println("----");
+    System.out.println("  You decide to take the main staircase. At the top of the stair case you see a tall man dressed in a military uniform. His hair is a silvery white like the fur of an artic fox, and his amber eyes reflect the morning sun like gold in a river./n   He was speaking to a servant of the mannor. His voice was urgent and annoyed.");
+    System.out.println("Aspen: How dare you.");
     
     
   }

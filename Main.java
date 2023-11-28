@@ -5,9 +5,12 @@ class Main {
   public Character Nyxie = new Character("Nyxie", "he", "him", 0);
   public Character Aspen = new Character("General Aspen", "he","him", 0);
   public Character Tina = new Character ("Tina", "she", "her", 0);
+
+  public boolean continueGame = true;
   
   public static void main(String[] args) {
-    while(true){
+    
+    while(continueGame){
       //Player menu variables
       int gender = 0;
       String name;
@@ -105,9 +108,10 @@ class Main {
         
       }
     }
-    //close scanner
-    //continueScanner.close();
-    //nameScanner.close();
-    //genderScanner.close();
+    //close scanners
+    continueScanner.close();
+    nameScanner.close();
+    genderScanner.close();
+    System.exit(0);
   }
 }
